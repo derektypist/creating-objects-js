@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>Creating Objects</title>
+</head>
+<body>
+<h1 style="text-align: center;">Creating Objects in JavaScript</h1>
+<p>Drawing Information</p>
+<ul>
+<li id="getDwgNumber"></li>
+<li id="getDwgTitle"></li>
+<li id="getDwgRevision"></li>
+<li id="getDwgDate"></li>
+</ul>
+<script>
+var drawing = 
+	{
+		dwgNumber: "SHA/001",
+		dwgTitle: "Green Sphere",
+		dwgRevision: "A",
+		dwgDate: new Date("2007-05-04")
+		};
+		
+document.getElementById("getDwgNumber").innerHTML = "Drawing Number: " + drawing.dwgNumber;
+document.getElementById("getDwgTitle").innerHTML = "Drawing Title: " + drawing.dwgTitle;
+document.getElementById("getDwgRevision").innerHTML = "Drawing Revision: " + drawing.dwgRevision;
+document.getElementById("getDwgDate").innerHTML = "Drawing Date: " + drawing.dwgDate.toDateString();
+</script>
+</body>
+</html>
